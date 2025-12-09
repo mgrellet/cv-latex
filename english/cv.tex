@@ -1,164 +1,186 @@
 \documentclass[11pt]{article}
-\usepackage{graphicx}
-\setlength{\parindent}{0pt}
-\usepackage{hyperref}
-\usepackage{enumitem}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[english]{babel}
-\usepackage[left=1.06cm,top=1.7cm,right=1.06cm,bottom=0.49cm]{geometry}
+\usepackage{hyperref}
+\usepackage[left=1.5cm,top=1.5cm,right=1.5cm,bottom=1.5cm]{geometry}
+\setlength{\parindent}{0pt}
+\usepackage{enumitem}
 
 \begin{document}
 
-% ===========================
-% HEADER
-% ===========================
+% =========================
+% HEADER (ATS friendly)
+% =========================
 \begin{center}
-    \textbf{Martín Alejandro Grellet}\\
-    \hrulefill
+    {\Large \textbf{Martín Alejandro Grellet}}\\[-2pt]
+    Tucumán, Argentina · martin.alejandro.grellet@gmail.com · +54 381 607 3574 · 
+    \href{https://www.linkedin.com/in/mgrellet}{linkedin.com/in/mgrellet}
 \end{center}
 
-\begin{center}
-   \textbullet\ Tucumán, Argentina \textbullet\ martin.alejandro.grellet@gmail.com \textbullet\ +54 3816073574 \\
-   \href{https://www.linkedin.com/in/mgrellet}{linkedin.com/in/mgrellet}
-\end{center}
+
+\vspace{12pt}
+
+% =========================
+% PROFESSIONAL EXPERIENCE
+% =========================
+{\large \textbf{Professional Experience}}\\[4pt]
+
+\textbf{SILTIUM} \hfill Remote, Argentina\\
+\textit{Software Engineer – Correo Argentino} \hfill Mar 2025 -- Present
+
+\begin{itemize}[leftmargin=12pt]
+    \item Developing a centralized application using TypeScript (NestJS) to register and manage international shipment data, improving traceability and reducing manual workload.
+\end{itemize}
 
 \vspace{6pt}
 
-% ===========================
-% PROFESSIONAL EXPERIENCE
-% ===========================
-\begin{center}
-    \textbf{Professional Experience}
-\end{center}
-
-\textbf{SILTIUM} \hfill Remote, Argentina \\
-\textit{Software Engineer – Correo Argentino} \hfill Mar 2025 -- Present
-
-\vspace{3pt}
-Developing a centralized application for Correo Argentino to register and manage incoming international shipment data, improving traceability and reducing manual workload.
-
-\vspace{12pt}
-
-\textbf{AYI Group} \hfill Remote, Argentina \\
+\textbf{AYI Group} \hfill Remote, Argentina\\
 \textit{Full Stack Software Engineer} \hfill Jul 2024 -- Jan 2025
 
-\vspace{3pt}
-Led the migration of a legacy monolithic application for the client Grupo Río Varadero to a modern microservices-based architecture (Spring Boot) and microfrontends (ReactJS), improving scalability and maintainability. \\
-Refactored and optimized MySQL queries and indexing strategies, significantly reducing database latency and improving overall application performance.
+\begin{itemize}[leftmargin=12pt]
+    \item Led the migration of a legacy monolith to microservices (Spring Boot) and microfrontends (ReactJS), improving scalability and maintainability.
+    \item Optimized MySQL queries and indexing strategies, significantly reducing database latency.
+\end{itemize}
 
-\vspace{12pt}
+\vspace{6pt}
 
-\textbf{SOVOS} \hfill Tucumán, Argentina \\
+\textbf{SOVOS} \hfill Tucumán, Argentina\\
 \textit{Software Engineer} \hfill Aug 2022 -- Jul 2024
 
-\vspace{3pt}
-Developed a tax compliance engine for a Point-of-Sale (POS) solution, enabling accurate tax calculations across multiple jurisdictions using user-uploaded product data. \\
-Implemented and maintained CI/CD pipelines using Azure DevOps and Jenkins, improving deployment speed and reliability. \\
-Led performance-driven refactoring of Java microservices, optimizing batch processing and significantly reducing response times under high load.
+\begin{itemize}[leftmargin=12pt]
+    \item Built a tax compliance engine for POS systems, enabling accurate tax calculations across jurisdictions.
+    \item Implemented CI/CD pipelines using Azure DevOps and Jenkins, improving deployment reliability.
+    \item Refactored Java microservices for performance, reducing processing time under high load.
+\end{itemize}
 
-\vspace{12pt}
+\vspace{6pt}
 
-\textbf{GLOBANT} \hfill Tucumán, Argentina \\
+\textbf{GLOBANT} \hfill Tucumán, Argentina\\
 \textit{Java Software Designer – JP Morgan Chase} \hfill Mar 2022 -- Aug 2022
 
-\vspace{3pt}
-Improved dependency management in Spring Boot microservices, addressing transitive issues and resolving critical security vulnerabilities identified by Veracode. \\
-Performed testing and deployments, ensuring correct functionality.
+\begin{itemize}[leftmargin=12pt]
+    \item Improved dependency management and resolved vulnerabilities identified by Veracode.
+    \item Performed testing and deployment of Spring Boot microservices.
+\end{itemize}
 
-\vspace{12pt}
+\vspace{6pt}
 
-\textbf{Mercado Libre} \hfill Remote, Argentina \\
+\textbf{Mercado Libre} \hfill Remote, Argentina\\
 \textit{Software Engineer} \hfill Sep 2021 -- Mar 2022
 
-\vspace{3pt}
-Developed Go APIs for Visa users and MercadoPago sellers, ensuring regulatory compliance. \\
-Managed end-to-end deployment, testing, and application monitoring.
+\begin{itemize}[leftmargin=12pt]
+    \item Developed Go APIs for Visa users and MercadoPago sellers, ensuring compliance with regulatory requirements.
+    \item Managed testing, deployment, and monitoring of critical services.
+\end{itemize}
 
-\vspace{12pt}
+\vspace{6pt}
 
-\textbf{SOVOS} \hfill Tucumán, Argentina \\
+\textbf{SOVOS} \hfill Tucumán, Argentina\\
 \textit{Software Engineer / Tech Lead} \hfill Feb 2016 -- Sep 2021
 
-\vspace{3pt}
-Led cross-functional teams, providing technical leadership and support. \\
-Spearheaded a Snowflake–Kafka proof of concept, optimizing product interactions. \\
-Designed robust tax-calculation microservices using Spring Boot and RabbitMQ. \\
-Developed POS system solutions in AngularJS and Java 8, implementing CI/CD pipelines with Jenkins.
+\begin{itemize}[leftmargin=12pt]
+    \item Led cross-functional teams, providing technical direction and mentoring.
+    \item Led a Snowflake–Kafka proof of concept to optimize data integration and processing.
+    \item Built tax-calculation microservices using Spring Boot and RabbitMQ.
+    \item Designed POS system components using AngularJS and Java 8.
+    \item Implemented CI/CD pipelines with Jenkins.
+\end{itemize}
 
-\vspace{12pt}
+\vspace{6pt}
 
-\textbf{Hewlett-Packard} \hfill Córdoba, Argentina \\
+\textbf{Hewlett-Packard} \hfill Córdoba, Argentina\\
 \textit{Application Support} \hfill Apr 2014 -- Feb 2016
 
-\vspace{3pt}
-Maintained critical SOAP Web Services for airline applications, ensuring seamless operations. \\
-Provided 24/7 support for UAT and Production environments, ensuring system reliability.
+\begin{itemize}[leftmargin=12pt]
+    \item Maintained SOAP Web Services for airline applications.
+    \item Provided 24/7 support for production and UAT environments.
+\end{itemize}
 
-\vspace{12pt}
+\vspace{6pt}
 
-\textbf{GLOBANT} \hfill Tucumán, Argentina \\
+\textbf{GLOBANT} \hfill Tucumán, Argentina\\
 \textit{Java Software Developer} \hfill May 2013 -- Apr 2014
 
-\vspace{3pt}
-Developed an internal travel portal from scratch using Java 7, Spring 3, and Thymeleaf/jQuery.
+\begin{itemize}[leftmargin=12pt]
+    \item Developed an internal travel portal using Java 7, Spring 3, and Thymeleaf/jQuery.
+\end{itemize}
 
-\vspace{12pt}
+\vspace{6pt}
 
-\textbf{La Gaceta} \hfill Tucumán, Argentina \\
+\textbf{La Gaceta} \hfill Tucumán, Argentina\\
 \textit{PHP Developer} \hfill Jun 2012 -- May 2013
 
-\vspace{3pt}
-Led the migration of La Gaceta’s main website, implementing new features for journalists and end users.
+\begin{itemize}[leftmargin=12pt]
+    \item Migrated the newspaper’s website and implemented new functionality for internal and external users.
+\end{itemize}
 
-\vspace{12pt}
+\vspace{6pt}
 
-\textbf{Everis} \hfill Tucumán, Argentina \\
+\textbf{Everis} \hfill Tucumán, Argentina\\
 \textit{Developer} \hfill Nov 2011 -- Jun 2012
 
-\vspace{3pt}
-Maintained internal portals for Movistar Argentina, improving data processing workflows.
+\begin{itemize}[leftmargin=12pt]
+    \item Maintained internal portals for Movistar Argentina, improving data processing workflows.
+\end{itemize}
 
-\vspace{12pt}
+\vspace{6pt}
 
-\textbf{Hewlett-Packard} \hfill Córdoba, Argentina \\
+\textbf{Hewlett-Packard} \hfill Córdoba, Argentina\\
 \textit{Developer} \hfill Jul 2011 -- Nov 2011
 
-\vspace{3pt}
-Developed an API for number portability, demonstrating adaptability and rapid learning.
+\begin{itemize}[leftmargin=12pt]
+    \item Developed an API for number portability.
+\end{itemize}
+
+\vspace{6pt}
+
+\textbf{Everis} \hfill Tucumán, Argentina\\
+\textit{Developer / QA} \hfill Jul 2010 -- Jun 2011
+
+\begin{itemize}[leftmargin=12pt]
+    \item Maintained internal portals and executed QA processes to ensure system stability.
+\end{itemize}
+
+\vspace{14pt}
+
+% =========================
+% EDUCATION
+% =========================
+{\large \textbf{Education}}\\[4pt]
+
+\textbf{Universidad del Norte Santo Tomás de Aquino} \hfill Tucumán, Argentina\\
+Degree: Computer Engineering \hfill 2010
+
+\vspace{14pt}
+
+% =========================
+% SKILLS
+% =========================
+{\large \textbf{Technical Skills}}\\[4pt]
+
+\textbf{Languages:} Java, Go, JavaScript, TypeScript, SQL, Shell scripting \\
+\textbf{Databases:} MySQL, PostgreSQL, SQL Server, Oracle \\
+\textbf{Frameworks:} Spring Boot, AngularJS, NestJS \\
+\textbf{Tools:} Git, Docker, Jenkins, Azure DevOps \\
+\textbf{Concepts:} Microservices, CI/CD, REST APIs, Message Queues (RabbitMQ), Cloud, Distributed Systems
 
 \vspace{12pt}
 
-\textbf{Everis} \hfill Tucumán, Argentina \\
-\textit{Developer / QA} \hfill Jul 2010 -- Jun 2011
+% =========================
+% CERTIFICATIONS
+% =========================
+{\large \textbf{Certifications}}\\[4pt]
 
-\vspace{3pt}
-Maintained internal company portals and performed QA tasks to ensure application stability and reliability.
+Oracle Certified Associate, Java SE 7 Programmer (1Z0-803, 2014)
 
-\vspace{14pt}
+\vspace{12pt}
 
-% ===========================
-% EDUCATION
-% ===========================
-\begin{center}
-    \textbf{Education}
-\end{center}
+% =========================
+% LANGUAGES
+% =========================
+{\large \textbf{Languages}}\\[4pt]
 
-\textbf{Universidad del Norte Santo Tomás de Aquino} \hfill Tucumán, Argentina \\
-Computer Engineering Degree \hfill 2010
-
-\vspace{14pt}
-
-% ===========================
-% ADDITIONAL INFORMATION
-% ===========================
-\begin{center}
-    \textbf{Additional Information}
-\end{center}
-
-\textbf{Technical Skills:} Java, Go, SQL, JavaScript, TypeScript, Shell scripting, Spring Boot, NestJS \\
-\textbf{Tools:} Git, Docker, Jenkins \\
-\textbf{Certifications:} Oracle Certified Associate — Java SE 7 Programmer (1Z0-803, 2014) \\
-\textbf{Languages:} English (conversational), Spanish (native)
+English (Conversational), Spanish (Native)
 
 \end{document}
