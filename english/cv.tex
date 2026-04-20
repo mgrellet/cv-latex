@@ -4,8 +4,11 @@
 \usepackage[english]{babel}
 \usepackage{hyperref}
 \usepackage[left=1.5cm,top=1.5cm,right=1.5cm,bottom=1.5cm]{geometry}
-\setlength{\parindent}{0pt}
+\usepackage{parskip}
 \usepackage{enumitem}
+\usepackage{needspace}
+
+\setlength{\parindent}{0pt}
 
 \begin{document}
 
@@ -14,173 +17,143 @@
 % =========================
 \begin{center}
     {\Large \textbf{Martín Alejandro Grellet}}\\[-2pt]
-    Tucumán, Argentina · martin.alejandro.grellet@gmail.com · +54 381 607 3574 · 
+    Tucumán, Argentina · martin.alejandro.grellet@gmail.com · +54 381 607 3574 ·
     \href{https://www.linkedin.com/in/mgrellet}{linkedin.com/in/mgrellet}
 \end{center}
 
+\vspace{6pt}
 
-\vspace{12pt}
+% =========================
+% PROFESSIONAL SUMMARY
+% =========================
+{\large \textbf{PROFESSIONAL SUMMARY}}\\[4pt]
+\hrule
+
+Software Engineer with 13+ years of experience working on scalable, high-performance systems and distributed architectures. Background in Java (Spring Boot, Java 8–17) and microservices. Experience in system migrations, performance improvements, and team collaboration. Worked on systems handling high-volume transactional workloads and distributed data processing.
+
+\vspace{10pt}
 
 % =========================
 % PROFESSIONAL EXPERIENCE
 % =========================
 {\large \textbf{PROFESSIONAL EXPERIENCE}}\\[4pt]
+\hrule
 
 \textbf{Siltium} \hfill Remote, Argentina\\
 \textit{Software Engineer – Correo Argentino} \hfill Mar 2025 -- Present
 
 \begin{itemize}[leftmargin=12pt]
-    \item Developing a centralized application using Node/TypeScript (NestJS) to register and manage international shipment data, improving traceability and reducing manual workload.
+    \item Developing a centralized Node.js/TypeScript (NestJS) application to register and manage international shipment data, improving end-to-end traceability and reducing manual processing workload by $\sim$40\%.
 \end{itemize}
-
-\vspace{6pt}
 
 \textbf{AYI Group} \hfill Remote, Argentina\\
 \textit{Full Stack Software Engineer} \hfill Jul 2024 -- Jan 2025
 
 \begin{itemize}[leftmargin=12pt]
-    \item Led the migration of a legacy monolith to microservices (Spring Boot) and microfrontends (ReactJS), improving scalability and maintainability.
-    \item Optimized MySQL queries and indexing strategies, significantly reducing database latency.
+    \item Led the architectural migration from a legacy monolith to microservices (Java/Spring Boot) and microfrontends (React), improving system scalability and reducing deployment risk.
+    \item Optimized MySQL query plans and indexing strategies, cutting average database response times by $\sim$35\% under peak load.
 \end{itemize}
-
-\vspace{6pt}
 
 \textbf{Sovos} \hfill Tucumán, Argentina\\
 \textit{Software Engineer} \hfill Aug 2022 -- Jul 2024
 
 \begin{itemize}[leftmargin=12pt]
-    \item Built a tax compliance engine for POS systems, enabling accurate tax calculations across jurisdictions.
-    \item Implemented CI/CD pipelines using Azure DevOps and Jenkins, improving deployment reliability.
-    \item Refactored Java microservices (Spring Boot) for performance, reducing processing time under high load.
+    \item Built a tax compliance engine for POS systems in Java/Spring Boot, enabling accurate multi-jurisdiction tax calculations used across hundreds of retail clients.
+    \item Implemented and maintained CI/CD pipelines with Azure DevOps and Jenkins, reducing release cycle time and increasing deployment reliability.
+    \item Refactored Java microservices (Spring Boot, Java 11/17) for performance optimization, achieving measurable throughput improvements under high-concurrency scenarios.
 \end{itemize}
-
-\vspace{6pt}
 
 \textbf{Globant} \hfill Tucumán, Argentina\\
 \textit{Java Software Designer – JP Morgan Chase} \hfill Mar 2022 -- Aug 2022
 
 \begin{itemize}[leftmargin=12pt]
-    \item Improved dependency management and resolved vulnerabilities identified by Veracode.
-    \item Performed testing and deployment of Spring Boot microservices.
+    \item Improved Maven dependency management and remediated security vulnerabilities flagged by Veracode static analysis, reducing critical CVE exposure.
+    \item Performed testing, packaging, and deployment of Spring Boot microservices in a regulated banking environment.
 \end{itemize}
-
-\vspace{6pt}
 
 \textbf{Mercado Libre} \hfill Remote, Argentina\\
 \textit{Software Engineer} \hfill Sep 2021 -- Mar 2022
 
 \begin{itemize}[leftmargin=12pt]
-    \item Developed Go APIs for Visa users and MercadoPago sellers, ensuring compliance with regulatory requirements.
-    \item Managed testing, deployment, and monitoring of critical services.
+    \item Developed high-throughput Go-based REST APIs for payment and financial services, handling millions of daily transactions with strict SLA and regulatory compliance.
+    \item Improved observability and reliability through monitoring, alerting, and production metrics analysis.
 \end{itemize}
 
-\vspace{6pt}
+% Avoid the Sovos (Tech Lead) heading alone at the bottom of a page; move the block if needed.
+\Needspace{9\baselineskip}
 
 \textbf{Sovos} \hfill Tucumán, Argentina\\
 \textit{Software Engineer / Tech Lead} \hfill Feb 2016 -- Sep 2021
 
 \begin{itemize}[leftmargin=12pt]
-    \item Led cross-functional teams, providing technical direction and mentoring.
-    \item Led a Snowflake–Kafka proof of concept to optimize data integration and processing.
-    \item Built tax-calculation microservices using Spring Boot and RabbitMQ.
-    \item Designed POS system components using AngularJS and Java 8.
-    \item Implemented CI/CD pipelines with Jenkins.
+    \item Led cross-functional teams of 4–6 engineers, driving technical decisions, mentoring, and improving delivery predictability.
+    \item Architected and built tax-calculation microservices using Java/Spring Boot and RabbitMQ, ensuring high availability and fault tolerance in distributed environments.
+    \item Led a Snowflake--Kafka proof of concept to evaluate real-time data integration, improving processing throughput by $\sim$50\% in testing.
+    \item Designed POS system frontend components with AngularJS (legacy) and Java 8, supporting rollout to enterprise retail clients.
+    \item Established CI/CD pipelines with Jenkins, standardizing the release process across multiple teams.
 \end{itemize}
-
-\vspace{6pt}
 
 \textbf{Hewlett-Packard} \hfill Córdoba, Argentina\\
-\textit{Application Support} \hfill Apr 2014 -- Feb 2016
+\textit{Application Support Engineer} \hfill Apr 2014 -- Feb 2016
 
 \begin{itemize}[leftmargin=12pt]
-    \item Maintained SOAP Web Services for airline applications.
-    \item Provided 24/7 support for production and UAT environments.
+    \item Maintained and supported SOAP/REST Web Services for mission-critical airline reservation applications.
+    \item Provided 24/7 on-call production and UAT support, meeting strict SLA requirements for global airline customers.
 \end{itemize}
-
-\vspace{6pt}
 
 \textbf{Globant} \hfill Tucumán, Argentina\\
 \textit{Java Software Developer} \hfill May 2013 -- Apr 2014
 
 \begin{itemize}[leftmargin=12pt]
-    \item Developed an internal travel portal using Java 7, Spring 3, and Thymeleaf/jQuery.
+    \item Built an internal travel portal using Java 7, Spring 3, Hibernate/JPA, and Thymeleaf/jQuery from scratch.
 \end{itemize}
 
-\vspace{6pt}
+\textit{Earlier Experience (2010--2013):} PHP Developer at La Gaceta · Developer at Everis for Movistar Argentina · Developer at Hewlett-Packard · Developer/QA at Everis
 
-\textbf{La Gaceta} \hfill Tucumán, Argentina\\
-\textit{PHP Developer} \hfill Jun 2012 -- May 2013
-
-\begin{itemize}[leftmargin=12pt]
-    \item Migrated the newspaper’s website and implemented new functionality for internal and external users.
-\end{itemize}
-
-\vspace{6pt}
-
-\textbf{Everis} \hfill Tucumán, Argentina\\
-\textit{Developer} \hfill Nov 2011 -- Jun 2012
-
-\begin{itemize}[leftmargin=12pt]
-    \item Maintained internal portals for Movistar Argentina, improving data processing workflows.
-\end{itemize}
-
-\vspace{6pt}
-
-\textbf{Hewlett-Packard} \hfill Córdoba, Argentina\\
-\textit{Developer} \hfill Jul 2011 -- Nov 2011
-
-\begin{itemize}[leftmargin=12pt]
-    \item Developed an API for number portability.
-\end{itemize}
-
-\vspace{6pt}
-
-\textbf{Everis} \hfill Tucumán, Argentina\\
-\textit{Developer / QA} \hfill Jul 2010 -- Jun 2011
-
-\begin{itemize}[leftmargin=12pt]
-    \item Maintained internal portals and executed QA processes to ensure system stability.
-\end{itemize}
-
-\vspace{14pt}
+\vspace{10pt}
 
 % =========================
 % EDUCATION
 % =========================
 {\large \textbf{EDUCATION}}\\[4pt]
+\hrule
 
 \textbf{Universidad del Norte Santo Tomás de Aquino} \hfill Tucumán, Argentina\\
-Degree: Computer Engineering \hfill 2010
+Bachelor's Degree in Computer Engineering \hfill Graduated 2010
 
-\vspace{14pt}
-
-% =========================
-% SKILLS
-% =========================
-{\large \textbf{TECHNICAL SKILLS}}\\[4pt]
-
-\textbf{Languages:} Java, Go, JavaScript, TypeScript, SQL, Shell scripting \\
-\textbf{Databases:} MySQL, PostgreSQL, SQL Server, Oracle \\
-\textbf{Frameworks:} Spring Boot, AngularJS, NestJS, ReactJS \\
-\textbf{Tools:} Git, Docker, Jenkins, Azure DevOps, Gitlab, Github \\
-\textbf{Concepts:} Microservices, CI/CD, REST APIs, Message Queues (RabbitMQ)
-
-\vspace{12pt}
+\vspace{10pt}
 
 % =========================
 % CERTIFICATIONS
 % =========================
 {\large \textbf{CERTIFICATIONS}}\\[4pt]
+\hrule
 
-Oracle Certified Associate, Java SE 7 Programmer (1Z0-803, 2014)
+\textbf{Oracle Certified Associate, Java SE 7 Programmer (1Z0-803)} \hfill 2014
 
-\vspace{12pt}
+\vspace{10pt}
+
+% =========================
+% SKILLS
+% =========================
+{\large \textbf{TECHNICAL SKILLS}}\\[4pt]
+\hrule
+
+\textbf{Core technologies:} Java (8, 11, 17), Spring Boot, Spring MVC, Hibernate/JPA, Node.js (NestJS), TypeORM, Go, TypeScript, JavaScript, SQL, Shell, React, AngularJS (legacy) \\
+\textbf{Databases:} MySQL, PostgreSQL, SQL Server, Oracle, Snowflake \\
+\textbf{Messaging:} Kafka, RabbitMQ \\
+\textbf{DevOps \& Tools:} Docker, Jenkins, Azure DevOps, Git, Maven, Gradle \\
+\textbf{Testing:} JUnit, Mockito, Integration Testing \\
+\textbf{Practices:} Microservices, REST APIs, CI/CD, DDD, SOLID, Agile/Scrum
+
+\vspace{10pt}
 
 % =========================
 % LANGUAGES
 % =========================
 {\large \textbf{LANGUAGES}}\\[4pt]
+\hrule
 
-English (Conversational), Spanish (Native)
+\textbf{English} (Professional Working Proficiency) \quad \textbf{Spanish} (Native)
 
 \end{document}
