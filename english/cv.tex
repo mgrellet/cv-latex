@@ -3,9 +3,10 @@
 \usepackage[T1]{fontenc}
 \usepackage[english]{babel}
 \usepackage{hyperref}
-\usepackage[left=1.5cm,top=1.5cm,right=1.5cm,bottom=1.5cm]{geometry}
+\usepackage[left=1.2cm,top=1.2cm,right=1.2cm,bottom=1.2cm]{geometry}
 \usepackage{parskip}
 \usepackage{enumitem}
+\setlist[itemize]{topsep=1pt, itemsep=2pt, parsep=1pt, partopsep=0pt}
 \usepackage{needspace}
 
 \setlength{\parindent}{0pt}
@@ -16,8 +17,9 @@
 % HEADER (ATS friendly)
 % =========================
 \begin{center}
-    {\Large \textbf{Martín Alejandro Grellet}}\\[-2pt]
-    Tucumán, Argentina · martin.alejandro.grellet@gmail.com · +54 381 607 3574 ·
+    {\Large \textbf{Martín Alejandro Grellet}}\\[2pt]
+    {\normalsize Backend Engineer | Java · NestJS · Go}\\[2pt]
+    Tucumán, Argentina · martin.alejandro.grellet@gmail.com ·
     \href{https://www.linkedin.com/in/mgrellet}{linkedin.com/in/mgrellet}
 \end{center}
 
@@ -29,7 +31,7 @@
 {\large \textbf{PROFESSIONAL SUMMARY}}\\[4pt]
 \hrule
 
-Software Engineer with extensive experience working on scalable, high-performance systems and distributed architectures. Background in Java (Spring Boot, Java 8–17) and microservices. Experience in system migrations, performance improvements, and team collaboration. Worked on systems handling high-volume transactional workloads and distributed data processing.
+Backend Engineer with 13+ years building distributed systems and APIs in Java (Spring Boot) and Node.js (NestJS / TypeScript). Worked across fintech, tax compliance, e-commerce, and logistics — in high-throughput, production-critical environments. Designed and built microservices and event-driven pipelines at scale, led backend technical decisions, and mentored engineering teams.
 
 \vspace{10pt}
 
@@ -43,7 +45,8 @@ Software Engineer with extensive experience working on scalable, high-performanc
 \textit{Software Engineer – Correo Argentino} \hfill Mar 2025 -- Present
 
 \begin{itemize}[leftmargin=12pt]
-    \item Developing a centralized Node.js/TypeScript (NestJS) application to register and manage international shipment data, improving end-to-end traceability and reducing manual processing workload by $\sim$40\%.
+    \item Designing and implementing a centralized, high-throughput backend platform using TypeScript and NestJS to register and manage international shipment data, reducing manual processing workload by $\sim$70\% and eliminating recurring data entry errors.
+    \item Building a RESTful API layer consumed by multiple internal clients, enforcing clean architecture patterns to guarantee long-term maintainability across a growing team.
 \end{itemize}
 
 \textbf{AYI Group} \hfill Remote, Argentina\\
@@ -55,12 +58,12 @@ Software Engineer with extensive experience working on scalable, high-performanc
 \end{itemize}
 
 \textbf{Sovos} \hfill Tucumán, Argentina\\
-\textit{Software Engineer} \hfill Aug 2022 -- Jul 2024
+\textit{Principal Software Engineer} \hfill Aug 2022 -- Jul 2024
 
 \begin{itemize}[leftmargin=12pt]
-    \item Built a tax compliance engine for POS systems in Java/Spring Boot, enabling accurate multi-jurisdiction tax calculations used across hundreds of retail clients.
-    \item Implemented and maintained CI/CD pipelines with Azure DevOps and Jenkins, reducing release cycle time and increasing deployment reliability.
-    \item Refactored Java microservices (Spring Boot, Java 11/17) for performance optimization, achieving measurable throughput improvements under high-concurrency scenarios.
+    \item Designed and implemented a multi-jurisdictional tax calculation engine in Java/Spring Boot for POS environments, enabling accurate real-time tax calculations across complex cross-border rule sets.
+    \item Rebuilt critical batch processing pipelines across Java microservices, reducing average batch job execution times and improving API response times under high-concurrency transactional loads (from 1s to 100ms average).
+    \item Standardized CI/CD workflows across engineering teams using Azure DevOps and Jenkins, eliminating manual release steps and reducing deployment friction.
 \end{itemize}
 
 \textbf{Globant} \hfill Tucumán, Argentina\\
@@ -75,40 +78,20 @@ Software Engineer with extensive experience working on scalable, high-performanc
 \textit{Software Engineer} \hfill Sep 2021 -- Mar 2022
 
 \begin{itemize}[leftmargin=12pt]
-    \item Developed high-throughput Go-based REST APIs for payment and financial services, handling millions of daily transactions with strict SLA and regulatory compliance.
-    \item Improved observability and reliability through monitoring, alerting, and production metrics analysis.
+    \item Developed high-throughput Go-based REST APIs for payment and financial services (MercadoPago), building Visa-compliant endpoints and serving millions of daily transactions with sub-100ms response times under peak load.
+    \item Designed automated stress testing pipelines (Artillery) and established real-time observability dashboards using Datadog and New Relic to maintain SLA compliance.
 \end{itemize}
-
-% Avoid the Sovos (Tech Lead) heading alone at the bottom of a page; move the block if needed.
-\Needspace{9\baselineskip}
 
 \textbf{Sovos} \hfill Tucumán, Argentina\\
 \textit{Software Engineer / Tech Lead} \hfill Feb 2016 -- Sep 2021
 
 \begin{itemize}[leftmargin=12pt]
     \item Led cross-functional teams of 4–6 engineers, driving technical decisions, mentoring, and improving delivery predictability.
-    \item Architected and built tax-calculation microservices using Java/Spring Boot and RabbitMQ, ensuring high availability and fault tolerance in distributed environments.
-    \item Led a Snowflake--Kafka proof of concept to evaluate real-time data integration, improving processing throughput by $\sim$50\% in testing.
-    \item Designed POS system frontend components with AngularJS (legacy) and Java 8, supporting rollout to enterprise retail clients.
-    \item Established CI/CD pipelines with Jenkins, standardizing the release process across multiple teams.
+    \item Architected and built event-driven tax-calculation microservices using Java/Spring Boot and RabbitMQ, establishing the production baseline.
+    \item Spearheaded a Snowflake-Kafka proof of concept to evaluate real-time data pipeline strategies, improving processing throughput by $\sim$50\% in PoC test environments.
 \end{itemize}
 
-\textbf{Hewlett-Packard} \hfill Córdoba, Argentina\\
-\textit{Application Support Engineer} \hfill Apr 2014 -- Feb 2016
-
-\begin{itemize}[leftmargin=12pt]
-    \item Maintained and supported SOAP/REST Web Services for mission-critical airline reservation applications.
-    \item Provided 24/7 on-call production and UAT support, meeting strict SLA requirements for global airline customers.
-\end{itemize}
-
-\textbf{Globant} \hfill Tucumán, Argentina\\
-\textit{Java Software Developer} \hfill May 2013 -- Apr 2014
-
-\begin{itemize}[leftmargin=12pt]
-    \item Built an internal travel portal using Java 7, Spring 3, Hibernate/JPA, and Thymeleaf/jQuery from scratch.
-\end{itemize}
-
-\textit{Earlier Experience (2010--2013):} PHP Developer at La Gaceta · Developer at Everis for Movistar Argentina · Developer at Hewlett-Packard · Developer/QA at Everis
+\textit{Earlier Experience (2010--2016):} Java Developer / Application Support at Hewlett Packard Enterprise (American Airlines SOAP/REST services, 24/7 support) · Software Developer at Globant (internal travel portal with Java 7/Spring 3) · PHP Developer at La Gaceta (digital news portal features) · Software Developer at Everis/HP (Java, Struts, Flex, PL/SQL)
 
 \vspace{10pt}
 
@@ -141,10 +124,10 @@ Bachelor's Degree in Computer Engineering
 
 \textbf{Core technologies:} Java (8, 11, 17), Spring Boot, Spring MVC, Hibernate/JPA, Node.js (NestJS), TypeORM, Go, TypeScript, JavaScript, SQL, Shell, React, AngularJS (legacy) \\
 \textbf{Databases:} MySQL, PostgreSQL, SQL Server, Oracle, Snowflake \\
-\textbf{Messaging:} Kafka, RabbitMQ \\
+\textbf{Messaging:} RabbitMQ \\
 \textbf{DevOps \& Tools:} Docker, Jenkins, Azure DevOps, Git, Maven, Gradle \\
 \textbf{Testing:} JUnit, Mockito, Integration Testing \\
-\textbf{Practices:} Microservices, REST APIs, CI/CD, DDD, SOLID, Agile/Scrum
+\textbf{Practices:} Microservices, REST APIs, CI/CD, DDD, SOLID
 
 \vspace{10pt}
 

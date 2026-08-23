@@ -3,9 +3,10 @@
 \usepackage[T1]{fontenc}
 \usepackage[spanish]{babel}
 \usepackage{hyperref}
-\usepackage[left=1.5cm,top=1.5cm,right=1.5cm,bottom=1.5cm]{geometry}
+\usepackage[left=1.2cm,top=1.2cm,right=1.2cm,bottom=1.2cm]{geometry}
 \usepackage{parskip}
 \usepackage{enumitem}
+\setlist[itemize]{topsep=1pt, itemsep=2pt, parsep=1pt, partopsep=0pt}
 \usepackage{needspace}
 
 \setlength{\parindent}{0pt}
@@ -16,8 +17,9 @@
 % CABECERA (Apto para ATS)
 % =========================
 \begin{center}
-    {\Large \textbf{Martín Alejandro Grellet}}\\[-2pt]
-    Tucumán, Argentina · martin.alejandro.grellet@gmail.com · +54 381 607 3574 ·
+    {\Large \textbf{Martín Alejandro Grellet}}\\[2pt]
+    {\normalsize Senior Backend Engineer | Java · NestJS · Go}\\[2pt]
+    Tucumán, Argentina · martin.alejandro.grellet@gmail.com ·
     \href{https://www.linkedin.com/in/mgrellet}{linkedin.com/in/mgrellet}
 \end{center}
 
@@ -29,7 +31,7 @@
 {\large \textbf{RESUMEN PROFESIONAL}}\\[4pt]
 \hrule
 
-Ingeniero de Software con amplia experiencia en sistemas distribuidos, escalables y de alto rendimiento. Experiencia en migraciones de sistemas, optimizaciones de rendimiento y colaboración en equipos multidisciplinarios. Ha trabajado en sistemas que manejan grandes volúmenes de transacciones y procesamiento de datos distribuidos.
+Backend Engineer con más de 13 años diseñando sistemas distribuidos y APIs en Java (Spring Boot) y Node.js (NestJS / TypeScript). Experiencia en fintech, cumplimiento fiscal, e-commerce y logística, en entornos de alto volumen transaccional y producción crítica. He diseñado microservicios y pipelines orientados a eventos a escala, liderado decisiones técnicas y mentoreado equipos de ingeniería.
 
 \vspace{10pt}
 
@@ -43,7 +45,8 @@ Ingeniero de Software con amplia experiencia en sistemas distribuidos, escalable
 \textit{Software Engineer – Correo Argentino} \hfill Mar 2025 -- Presente
 
 \begin{itemize}[leftmargin=12pt]
-    \item Desarrollo de una aplicación centralizada en Node.js/TypeScript (NestJS) para registrar y gestionar datos de envíos internacionales, mejorando la trazabilidad de extremo a extremo y reduciendo la carga de trabajo manual en un $\sim$40\%.
+    \item Diseño e implementación de una plataforma backend centralizada y de alto rendimiento en TypeScript y NestJS para registrar y gestionar datos de envíos internacionales, reduciendo la carga de trabajo manual en un $\sim$70\% y eliminando errores de entrada de datos.
+    \item Construcción de una capa de API REST consumida por múltiples clientes internos, aplicando patrones de arquitectura limpia para garantizar la mantenibilidad a largo plazo de un equipo en crecimiento.
 \end{itemize}
 
 \textbf{AYI Group} \hfill Remoto, Argentina\\
@@ -58,9 +61,9 @@ Ingeniero de Software con amplia experiencia en sistemas distribuidos, escalable
 \textit{Principal Software Engineer} \hfill Ago 2022 -- Jul 2024
 
 \begin{itemize}[leftmargin=12pt]
-    \item Construcción de un motor de cumplimiento tributario para sistemas POS en Java/Spring Boot, permitiendo cálculos impositivos precisos en múltiples jurisdicciones para cientos de clientes corporativos.
-    \item Implementación y mantenimiento de pipelines de CI/CD con Azure DevOps y Jenkins, reduciendo el ciclo de lanzamiento y aumentando la confiabilidad de los despliegues.
-    \item Refactorización de microservicios en Java (Spring Boot, Java 11/17) para optimización de rendimiento, logrando mejoras medibles en el rendimiento en escenarios de alta concurrencia.
+    \item Diseño e implementación de un motor de cumplimiento tributario en Java/Spring Boot para entornos POS, permitiendo cálculos impositivos precisos en tiempo real bajo complejas reglas transfronterizas.
+    \item Reconstrucción de pipelines críticos de procesamiento por lotes en microservicios Java, reduciendo el tiempo de ejecución promedio y mejorando la respuesta de las APIs bajo alta concurrencia transaccional (de 1s a 100ms en promedio).
+    \item Estandarización de flujos de trabajo de CI/CD utilizando Azure DevOps y Jenkins, eliminando pasos de lanzamiento manuales y reduciendo la fricción en los despliegues.
 \end{itemize}
 
 \textbf{Globant} \hfill Tucumán, Argentina\\
@@ -75,33 +78,20 @@ Ingeniero de Software con amplia experiencia en sistemas distribuidos, escalable
 \textit{Software Engineer} \hfill Sep 2021 -- Mar 2022
 
 \begin{itemize}[leftmargin=12pt]
-    \item Desarrollo de APIs REST en Go de alto rendimiento para servicios financieros y de pago, procesando millones de transacciones diarias bajo estrictos cumplimientos de SLA y normativas regulatorias.
-    \item Mejora de la observabilidad y confiabilidad de la plataforma mediante el diseño de monitoreo, alertas y análisis de métricas en producción.
+    \item Desarrollo de APIs REST en Go de alto rendimiento para servicios financieros y de pago (MercadoPago), construyendo endpoints que cumplen con normativas de Visa y procesando millones de transacciones diarias con tiempos de respuesta sub-100ms bajo picos de carga.
+    \item Diseño de pipelines de pruebas de estrés automatizadas (Artillery) y establecimiento de tableros de observabilidad en tiempo real con Datadog y New Relic para asegurar el cumplimiento de SLAs.
 \end{itemize}
-
-% Evitar que el encabezado de Sovos (Tech Lead) quede huérfano al final de la página
-\Needspace{9\baselineskip}
 
 \textbf{Sovos} \hfill Tucumán, Argentina\\
 \textit{Software Engineer / Tech Lead} \hfill Feb 2016 -- Sep 2021
 
 \begin{itemize}[leftmargin=12pt]
     \item Liderazgo de equipos multidisciplinarios de 4 a 6 ingenieros, impulsando decisiones técnicas, brindando mentoría y mejorando la previsibilidad en las entregas del equipo.
-    \item Diseño y desarrollo de microservicios de cálculo de impuestos utilizando Java/Spring Boot y RabbitMQ, asegurando alta disponibilidad y tolerancia a fallos en entornos distribuidos.
-    \item Liderazgo de una prueba de concepto (PoC) entre Snowflake y Kafka para evaluar la integración de datos en tiempo real, logrando incrementar el rendimiento de procesamiento en un $\sim$50\% en fase de pruebas.
-    \item Diseño de componentes frontend de sistemas POS con AngularJS (legado) y Java 8, dando soporte al despliegue para clientes corporativos de retail.
-    \item Establecimiento de pipelines de CI/CD utilizando Jenkins, estandarizando el proceso de despliegue entre múltiples equipos de desarrollo.
+    \item Diseño y desarrollo de microservicios orientados a eventos para el cálculo de impuestos usando Java/Spring Boot y RabbitMQ, estableciendo la base de producción.
+    \item Liderazgo de una prueba de concepto (PoC) entre Snowflake y Kafka para integrar datos en tiempo real, logrando incrementar el rendimiento de procesamiento en un $\sim$50\% en entornos de prueba.
 \end{itemize}
 
-\textbf{Hewlett-Packard} \hfill Córdoba, Argentina\\
-\textit{Application Support Engineer} \hfill Abr 2014 -- Feb 2016
-
-\begin{itemize}[leftmargin=12pt]
-    \item Soporte y mantenimiento de servicios web SOAP/REST para aplicaciones críticas de reservas de aerolíneas.
-    \item Guardias pasivas y activas de soporte 24/7 para entornos de producción y UAT, cumpliendo con los estrictos requerimientos de SLA para aerolíneas internacionales.
-\end{itemize}
-
-\textit{Experiencia previa (2010--2014):} Java Software Developer en Globant · Desarrollador PHP en La Gaceta · Desarrollador en Everis para Movistar Argentina · Desarrollador en Hewlett-Packard · Desarrollador/QA en Everis
+\textit{Experiencia previa (2010--2016):} Java Developer / Application Support en Hewlett Packard Enterprise (servicios SOAP/REST de American Airlines, soporte 24/7) · Java Software Developer en Globant (portal interno de viajes con Java 7/Spring 3) · Desarrollador PHP en La Gaceta (portal digital de noticias) · Desarrollador de Software en Everis/HP (Java, Struts, Flex, PL/SQL)
 
 \vspace{10pt}
 
@@ -137,7 +127,7 @@ Ingeniería en Informática
 \textbf{Mensajería:} Kafka, RabbitMQ \\
 \textbf{DevOps y herramientas:} Docker, Jenkins, Azure DevOps, Git, Maven, Gradle \\
 \textbf{Pruebas (Testing):} JUnit, Mockito, Pruebas de Integración \\
-\textbf{Prácticas:} Microservicios, REST APIs, CI/CD, DDD, SOLID, Metodologías Ágiles/Scrum
+\textbf{Prácticas:} Microservicios, REST APIs, CI/CD, DDD, SOLID
 
 \vspace{10pt}
 
