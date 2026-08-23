@@ -1,15 +1,24 @@
+%% Compile with: pdflatex cv_pomelo_spanish.tex
+%% ATS: lmodern (scalable) + microtype DisableLigatures so pdftotext reads fl/fi/ff literally.
+
 \documentclass[11pt]{article}
-\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
 \usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\DisableLigatures{encoding = *, family = * }
 \usepackage[spanish]{babel}
 \usepackage{hyperref}
-\usepackage[left=1.2cm,top=1.2cm,right=1.2cm,bottom=1.2cm]{geometry}
+\usepackage[left=1.5cm,top=1.2cm,right=1.5cm,bottom=1.2cm]{geometry}
 \usepackage{parskip}
 \usepackage{enumitem}
 \setlist[itemize]{topsep=1pt, itemsep=2pt, parsep=1pt, partopsep=0pt}
 \usepackage{needspace}
 
 \setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=12pt,itemsep=1pt,topsep=2pt,parsep=0pt,partopsep=0pt}
+\newcommand{\jobsep}{\vspace{8pt}}
 
 \begin{document}
 
@@ -23,120 +32,151 @@
     \href{https://www.linkedin.com/in/mgrellet}{linkedin.com/in/mgrellet}
 \end{center}
 
-\vspace{6pt}
+\vspace{20pt}
 
 % =========================
 % RESUMEN PROFESIONAL
 % =========================
-{\large \textbf{RESUMEN PROFESIONAL}}\\[4pt]
+{\large \textbf{RESUMEN PROFESIONAL}}\\[3pt]
 \hrule
+\vspace{3pt}
 
-Backend Engineer con más de 13 años diseñando sistemas distribuidos y APIs en Java (Spring Boot) y Node.js (NestJS / TypeScript). Experiencia en fintech, cumplimiento fiscal, e-commerce y logística, en entornos de alto volumen transaccional y producción crítica. He diseñado microservicios y pipelines orientados a eventos a escala, liderado decisiones técnicas y mentoreado equipos de ingeniería.
+Backend Engineer con experiencia en sistemas distribuidos y de alto rendimiento en Java (Spring Boot), Go y NestJS. Background en APIs REST bajo picos de carga, pipelines batch en microservicios, optimización de rendimiento, observabilidad, testing automatizado y CI/CD. Experiencia en entornos regulados (banca, compliance tributario) y en plataformas de alto volumen transaccional.
 
-\vspace{10pt}
+\vspace{20pt}
 
 % =========================
 % EXPERIENCIA PROFESIONAL
 % =========================
-{\large \textbf{EXPERIENCIA PROFESIONAL}}\\[4pt]
+{\large \textbf{EXPERIENCIA PROFESIONAL}}\\[3pt]
 \hrule
+\vspace{3pt}
 
 \textbf{Siltium} \hfill Remoto, Argentina\\
-\textit{Software Engineer – Correo Argentino} \hfill Mar 2025 -- Presente
+\textit{Software Engineer -- Correo Argentino} \hfill Mar 2025 -- Presente
 
-\begin{itemize}[leftmargin=12pt]
-    \item Diseño e implementación de una plataforma backend centralizada y de alto rendimiento en TypeScript y NestJS para registrar y gestionar datos de envíos internacionales, reduciendo la carga de trabajo manual en un $\sim$70\% y eliminando errores de entrada de datos.
-    \item Construcción de una capa de API REST consumida por múltiples clientes internos, aplicando patrones de arquitectura limpia para garantizar la mantenibilidad a largo plazo de un equipo en crecimiento.
+\begin{itemize}
+    \item Desarrollo de microservicios NestJS/TypeScript y APIs REST de alto rendimiento para datos de envíos internacionales, con arquitectura limpia para múltiples consumidores internos.
+    \item Automatización de flujos de integración y validación, reduciendo el procesamiento manual en un $\sim$70\% y eliminando errores recurrentes de carga de datos.
 \end{itemize}
+
+\jobsep
 
 \textbf{AYI Group} \hfill Remoto, Argentina\\
-\textit{Full Stack Software Engineer} \hfill Jul 2024 -- Ene 2025
+\textit{Full Stack Software Engineer} \hfill Jul 2024 -- Feb 2025
 
-\begin{itemize}[leftmargin=12pt]
-    \item Liderazgo de la migración arquitectónica desde un monolito legado hacia microservicios (Java/Spring Boot) y microfrontends (React), mejorando la escalabilidad del sistema y reduciendo el riesgo en los despliegues.
-    \item Optimización de planes de ejecución de consultas en MySQL y estrategias de indexación, disminuyendo los tiempos promedio de respuesta de la base de datos en un $\sim$35\% en momentos de alta carga.
+\begin{itemize}
+    \item Liderazgo de la migración de monolito legado a microservicios (Java/Spring Boot) y microfrontends (React), mejorando la capacidad de despliegue independiente.
+    \item Optimización de planes de ejecución e índices en MySQL, reduciendo la latencia promedio de base de datos en un $\sim$35\% bajo carga pico.
 \end{itemize}
+
+\jobsep
 
 \textbf{Sovos} \hfill Tucumán, Argentina\\
-\textit{Principal Software Engineer} \hfill Ago 2022 -- Jul 2024
+\textit{Principal Software Engineer} \hfill Jul 2022 -- Jul 2024
 
-\begin{itemize}[leftmargin=12pt]
-    \item Diseño e implementación de un motor de cumplimiento tributario en Java/Spring Boot para entornos POS, permitiendo cálculos impositivos precisos en tiempo real bajo complejas reglas transfronterizas.
-    \item Reconstrucción de pipelines críticos de procesamiento por lotes en microservicios Java, reduciendo el tiempo de ejecución promedio y mejorando la respuesta de las APIs bajo alta concurrencia transaccional (de 1s a 100ms en promedio).
-    \item Estandarización de flujos de trabajo de CI/CD utilizando Azure DevOps y Jenkins, eliminando pasos de lanzamiento manuales y reduciendo la fricción en los despliegues.
+\begin{itemize}
+    \item Construcción de servicios de cálculo impositivo multi-jurisdicción en Java/Spring Boot para sistemas POS (tax calculation offline), bajo alta concurrencia.
+    \item Reconstrucción de pipelines batch entre servicios, reduciendo la latencia de APIs dependientes de $\sim$1s a $\sim$100ms bajo carga transaccional pico.
+    \item Estandarización de CI/CD con Azure DevOps y Jenkins; colaboración con equipos de ingeniería en calidad de entrega.
 \end{itemize}
+
+\jobsep
 
 \textbf{Globant} \hfill Tucumán, Argentina\\
-\textit{Java Software Designer – JP Morgan Chase} \hfill Mar 2022 -- Ago 2022
+\textit{Java Software Designer -- JP Morgan Chase} \hfill Mar 2022 -- Jul 2022
 
-\begin{itemize}[leftmargin=12pt]
-    \item Optimización de la gestión de dependencias de Maven y remediación de vulnerabilidades de seguridad identificadas por análisis estático con Veracode, reduciendo la exposición a CVEs críticos.
-    \item Realización de pruebas, empaquetado y despliegue de microservicios Spring Boot en un entorno bancario regulado.
+\begin{itemize}
+    \item Remediación de hallazgos Veracode y riesgos de dependencias Maven; pruebas, empaquetado y despliegue de microservicios Spring Boot en entorno bancario regulado.
 \end{itemize}
+
+\jobsep
 
 \textbf{Mercado Libre} \hfill Remoto, Argentina\\
 \textit{Software Engineer} \hfill Sep 2021 -- Mar 2022
 
-\begin{itemize}[leftmargin=12pt]
-    \item Desarrollo de APIs REST en Go de alto rendimiento para servicios financieros y de pago (MercadoPago), construyendo endpoints que cumplen con normativas de Visa y procesando millones de transacciones diarias con tiempos de respuesta sub-100ms bajo picos de carga.
-    \item Diseño de pipelines de pruebas de estrés automatizadas (Artillery) y establecimiento de tableros de observabilidad en tiempo real con Datadog y New Relic para asegurar el cumplimiento de SLAs.
+\begin{itemize}
+    \item API REST en Go para ingestar y procesar archivos CSV diarios de transacciones offline de Visa, calculando el impacto financiero y alimentando flujos de conciliación posteriores.
+    \item Suite de stress testing con Artillery para validar la API bajo alto volumen; monitoreo de picos y fallas en Datadog (principal) y New Relic (métricas puntuales), con auto-scaling en producción ante incrementos de carga.
+    \item API de registro y clasificación de sellers de Mercado Libre (grandes, medianos y chicos), con datos fiscales en DynamoDB y reglas impositivas según segmento.
 \end{itemize}
+
+\jobsep
+
+\Needspace{14\baselineskip}
 
 \textbf{Sovos} \hfill Tucumán, Argentina\\
-\textit{Software Engineer / Tech Lead} \hfill Feb 2016 -- Sep 2021
+\textit{Software Engineer / Tech Lead} \hfill Feb 2016 -- Ago 2021
 
-\begin{itemize}[leftmargin=12pt]
-    \item Liderazgo de equipos multidisciplinarios de 4 a 6 ingenieros, impulsando decisiones técnicas, brindando mentoría y mejorando la previsibilidad en las entregas del equipo.
-    \item Diseño y desarrollo de microservicios orientados a eventos para el cálculo de impuestos usando Java/Spring Boot y RabbitMQ, estableciendo la base de producción.
-    \item Liderazgo de una prueba de concepto (PoC) entre Snowflake y Kafka para integrar datos en tiempo real, logrando incrementar el rendimiento de procesamiento en un $\sim$50\% en entornos de prueba.
+\begin{itemize}
+    \item Liderazgo de equipos multidisciplinarios de 4 a 6 ingenieros, impulsando decisiones técnicas, mentoría y previsibilidad en las entregas.
+    \item Diseño y desarrollo de microservicios de cálculo impositivo event-driven con Java/Spring Boot y RabbitMQ, asegurando alta disponibilidad y tolerancia a fallos.
+    \item Liderazgo de una PoC Snowflake--Kafka para integración de datos en tiempo real, mejorando el throughput de procesamiento en un $\sim$50\% en fase de pruebas.
+    \item Diseño de componentes frontend para la solución de cálculo impositivo offline en POS (AngularJS y Java 8), apoyando el rollout a clientes corporativos de retail.
+    \item Establecimiento de pipelines de CI/CD con Jenkins, estandarizando el proceso de release entre múltiples equipos.
 \end{itemize}
 
-\textit{Experiencia previa (2010--2016):} Java Developer / Application Support en Hewlett Packard Enterprise (servicios SOAP/REST de American Airlines, soporte 24/7) · Java Software Developer en Globant (portal interno de viajes con Java 7/Spring 3) · Desarrollador PHP en La Gaceta (portal digital de noticias) · Desarrollador de Software en Everis/HP (Java, Struts, Flex, PL/SQL)
+\jobsep
 
-\vspace{10pt}
+\textbf{Hewlett-Packard} \hfill Córdoba, Argentina\\
+\textit{Application Support Engineer} \hfill Abr 2014 -- Feb 2016
+
+\begin{itemize}
+    \item Soporte y mantenimiento de servicios web SOAP/REST para aplicaciones críticas de reservas de aerolíneas; guardias 24/7 en producción y UAT con SLAs estrictos.
+\end{itemize}
+
+\jobsep
+
+\textit{Experiencia previa (2010--2014):} Java Software Developer en Globant · Desarrollador PHP en La Gaceta · Desarrollador en Everis para Movistar Argentina · Desarrollador en Hewlett-Packard · Desarrollador/QA en Everis
+
+\vspace{20pt}
 
 % =========================
 % EDUCACIÓN
 % =========================
-{\large \textbf{EDUCACIÓN}}\\[4pt]
+{\large \textbf{EDUCACIÓN}}\\[3pt]
 \hrule
+\vspace{3pt}
 
 \textbf{Universidad del Norte Santo Tomás de Aquino} \hfill Tucumán, Argentina\\
-Ingeniería en Informática
+Ingeniería en Informática \hfill 2010
 
-\vspace{10pt}
+\vspace{20pt}
 
 % =========================
 % CERTIFICACIONES
 % =========================
-{\large \textbf{CERTIFICACIONES}}\\[4pt]
+{\large \textbf{CERTIFICACIONES}}\\[3pt]
 \hrule
+\vspace{3pt}
 
 \textbf{Oracle Certified Associate, Java SE 7 Programmer (1Z0-803)} \hfill 2014
 
-\vspace{10pt}
+\vspace{20pt}
+
+\enlargethispage{3\baselineskip}
 
 % =========================
 % HABILIDADES TÉCNICAS
 % =========================
-{\large \textbf{HABILIDADES TÉCNICAS}}\\[4pt]
+{\large \textbf{HABILIDADES TÉCNICAS}}\\[3pt]
 \hrule
+\vspace{3pt}
 
-\textbf{Tecnologías principales:} Java (8, 11, 17), Spring Boot, Spring MVC, Hibernate/JPA, Node.js (NestJS), TypeORM, Go, TypeScript, JavaScript, SQL, Shell, React, AngularJS \\
-\textbf{Bases de datos:} MySQL, PostgreSQL, SQL Server, Oracle, Snowflake \\
-\textbf{Mensajería:} Kafka, RabbitMQ \\
-\textbf{DevOps y herramientas:} Docker, Jenkins, Azure DevOps, Git, Maven, Gradle \\
-\textbf{Pruebas (Testing):} JUnit, Mockito, Pruebas de Integración \\
-\textbf{Prácticas:} Microservicios, REST APIs, CI/CD, DDD, SOLID
+\textbf{Backend:} Java (8, 11, 17), Spring Boot, Go, NestJS, REST APIs, sistemas de alto rendimiento / carga concurrente, OOP/SOLID \\
+\textbf{Microservicios y mensajería:} Arquitecturas distribuidas, RabbitMQ, diseño event-driven, pipelines de alta concurrencia y batch \\
+\textbf{Datos:} PostgreSQL, MySQL, SQL Server, Oracle, Snowflake, DynamoDB, Hibernate/JPA, TypeORM, optimización de consultas bajo carga pico \\
+\textbf{Observabilidad, entrega y prácticas:} Datadog, New Relic, Artillery, JUnit, Mockito, CI/CD (Jenkins, Azure DevOps), Docker, Git, Maven, Gradle, React, AngularJS (legacy), DDD, Agile/Scrum; uso diario de Cursor
 
-\vspace{10pt}
+\vspace{6pt}
 
 % =========================
 % IDIOMAS
 % =========================
-{\large \textbf{IDIOMAS}}\\[4pt]
+{\large \textbf{IDIOMAS}}\\[3pt]
 \hrule
+\vspace{3pt}
 
-\textbf{Inglés} (Competencia profesional) \quad \textbf{Español} (Nativo)
+\textbf{Inglés} (Competencia profesional completa) \quad \textbf{Español} (Nativo)
 
 \end{document}
