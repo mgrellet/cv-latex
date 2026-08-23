@@ -2,6 +2,52 @@
 
 CVs and cover letters in LaTeX. Compile to PDF with `pdflatex`.
 
+## How to use this repo
+
+The **canonical CVs** live in `english/cv.tex` and `spanish/cv-spanish.tex`. Do not edit those for a specific job. Each application gets its own company folder with a tailored copy.
+
+### Chat recipe (Cursor)
+
+Paste a message like this and attach the job description:
+
+```text
+Tailor a CV for <Company>. Language: English | Spanish.
+
+Job description:
+<paste the full JD>
+```
+
+That is enough. A project rule loads `promps.md` and the matching base CV automatically.
+
+If you want to be explicit (same result):
+
+```text
+Apply @promps.md using @english/cv.tex as the base, in a new folder named after the company.
+
+Job description:
+<paste the full JD>
+```
+
+Use `@spanish/cv-spanish.tex` instead when the CV must be in Spanish.
+
+### What the AI should produce
+
+| Path | Role |
+| --- | --- |
+| `{company}/cv-{company}-english.tex` or `…-spanish.tex` | Tailored CV |
+| `{company}/job-description.md` | Copy of the JD (for later reference) |
+| `{company}/*.pdf` | Compiled output |
+| `{company}/cover-letter-….tex` | Only if you ask for a cover letter |
+
+
+### What gets tailored vs what stays frozen
+
+- **Change:** headline, summary, bullet order/wording, which skills are listed first — so the JD keywords show up honestly.
+- **Do not change:** employers, dates, titles, metrics, or technologies that are not in the base CV. No invented stack (e.g. do not add Redis if it is not in the source).
+- **Layout:** keep the base preamble (ATS-friendly `lmodern` + `microtype`). Stay on **1–2 pages**.
+
+The rewrite follows the three steps in `promps.md`: recruiter match score → experience rewrite (Google XYZ) → ATS / hiring-manager scan.
+
 ## Online editors
 
 - https://app.crixet.com/
