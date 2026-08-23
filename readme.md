@@ -6,20 +6,9 @@ CVs and cover letters in LaTeX. Compile to PDF with `pdflatex`.
 
 The **canonical CVs** live in `english/cv.tex` and `spanish/cv-spanish.tex`. Do not edit those for a specific job. Each application gets its own company folder with a tailored copy.
 
-### Chat recipe (Cursor)
+### Chat recipe
 
-Paste a message like this and attach the job description:
-
-```text
-Tailor a CV for <Company>. Language: English | Spanish.
-
-Job description:
-<paste the full JD>
-```
-
-That is enough. A project rule loads `promps.md` and the matching base CV automatically.
-
-If you want to be explicit (same result):
+Tag `@promps.md` and the matching base CV, then paste the job description:
 
 ```text
 Apply @promps.md using @english/cv.tex as the base, in a new folder named after the company.
@@ -28,7 +17,7 @@ Job description:
 <paste the full JD>
 ```
 
-Use `@spanish/cv-spanish.tex` instead when the CV must be in Spanish.
+Use `@spanish/cv-spanish.tex` instead when the CV must be in Spanish. `promps.md` is the full pipeline (folder layout, hard rules, recruiter → rewrite → ATS).
 
 ### What the AI should produce
 
