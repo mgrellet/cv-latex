@@ -16,6 +16,7 @@ When this file is attached (`@promps.md`), tailor a company-specific CV from a *
 - Keep the LaTeX preamble and ATS setup from the base. Keep **1–2 pages**.
 - Headline, summary, and skills must match the JD using **real** experience only.
 - Put the most relevant jobs on page 1. Reorder bullets; do not fabricate impact.
+- Do not put years of experience on description
 
 ## Prompt 1 — Recruiter match
 

@@ -1,0 +1,132 @@
+%% Compile with: pdflatex cv-spanish.tex
+%% ATS: lmodern (scalable) + microtype DisableLigatures so pdftotext reads fl/fi/ff literally.
+%% CV base --- personalizar titular, resumen, bullets y skills según cada job description.
+
+\documentclass[10pt]{article}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\DisableLigatures{encoding = *, family = * }
+\usepackage[spanish]{babel}
+\usepackage{hyperref}
+\usepackage[left=1.3cm,top=0.8cm,right=1.3cm,bottom=0.8cm]{geometry}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{needspace}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=12pt,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt}
+\newcommand{\jobsep}{\vspace{3pt}}
+\newcommand{\jobskills}[1]{\vspace{0.5pt}{\small \textit{Habilidades:} #1}\\}
+
+\begin{document}
+
+% =========================
+% CABECERA (Apto para ATS)
+% =========================
+\begin{center}
+    {\Large \textbf{Martín Alejandro Grellet}}\\[1pt]
+    {\normalsize Software Engineer}\\[1pt]
+    Tucumán, Argentina · martin.alejandro.grellet@gmail.com ·
+    \href{https://www.linkedin.com/in/mgrellet}{linkedin.com/in/mgrellet}
+\end{center}
+
+\vspace{4pt}
+
+% =========================
+% RESUMEN PROFESIONAL
+% =========================
+{\large \textbf{RESUMEN PROFESIONAL}}\\[2pt]
+\hrule
+\vspace{2pt}
+
+Ingeniero de Software especializado en diseñar y llevar a producción sistemas en Java/Spring Boot, NestJS/TypeScript y Go: APIs REST, arquitecturas orientadas a eventos (RabbitMQ) e interfaces en React en entornos de alta concurrencia. Foco en calidad de entrega (observabilidad con Datadog y New Relic, testing, CI/CD), mentoría de ingenieros y trabajo conjunto con Producto. Trayectoria en compliance tributario, logística, pagos y plataformas transaccionales de alto volumen.
+
+\vspace{4pt}
+
+% =========================
+% EXPERIENCIA PROFESIONAL
+% =========================
+{\large \textbf{EXPERIENCIA PROFESIONAL}}\\[2pt]
+\hrule
+\vspace{2pt}
+
+\textbf{Siltium} \hfill Remoto, Argentina\\
+\textit{Software Engineer} \hfill Mar 2025 -- Presente
+
+\begin{itemize}
+    \item Diseño de servicios backend, APIs REST y modelos de datos para envíos internacionales de Correo Argentino en Java/Spring Boot y NestJS (TypeScript, Node.js), reduciendo el procesamiento manual en un $\sim$70\%. OpenAPI/Swagger; despliegue en OpenShift con manifiestos YAML.
+\end{itemize}
+\jobskills{JavaScript, TypeScript, Node.js, NestJS, Java, Spring Boot, OpenAPI/Swagger, OpenShift}
+
+\jobsep
+
+\textbf{AYI Group} \hfill Remoto, Argentina\\
+\textit{Software Engineer} \hfill Jul 2024 -- Feb 2025
+
+\begin{itemize}
+    \item Liderazgo de la migración de un monolito legado a servicios backend Java/Spring Boot y microfrontends React (JavaScript), desplegando con Docker. Reducción de la latencia promedio de MySQL en un $\sim$35\% bajo carga pico, optimizando planes de ejecución e índices.
+\end{itemize}
+\jobskills{Java, JavaScript, React, Spring Boot, MySQL, Docker}
+
+\jobsep
+
+\textbf{Sovos} \hfill Tucumán, Argentina\\
+\textit{Software Engineer} \hfill Jul 2022 -- May 2024
+
+\begin{itemize}
+    \item Diseño de servicios backend Java 17/Spring Boot y modelos de datos Hibernate/JPA para cálculo impositivo en POS bajo alta concurrencia; UI en React (JavaScript); contratos OpenAPI/Swagger para Producto. Reducción de latencia de APIs dependientes de $\sim$1s a $\sim$100ms. CI/CD con Azure DevOps y Jenkins; tests con JUnit y Mockito.
+\end{itemize}
+\jobskills{Java 17, JavaScript, React, Spring Boot, Hibernate, SQL, JUnit, Mockito, Azure DevOps, Jenkins}
+
+\jobsep
+
+\textbf{Mercado Libre} \hfill Remoto, Argentina\\
+\textit{Software Engineer} \hfill Sep 2021 -- Abr 2022
+
+\begin{itemize}
+    \item API REST en Go para ingestar CSV diarios de Visa bajo alto volumen; monitoreo en Datadog y New Relic. API de clasificación de sellers con datos fiscales en AWS DynamoDB.
+\end{itemize}
+\jobskills{Go, AWS, DynamoDB, Datadog, New Relic}
+
+\jobsep
+
+\textbf{Sovos} \hfill Tucumán, Argentina\\
+\textit{Software Engineer} \hfill Feb 2016 -- Sep 2021
+
+\begin{itemize}
+    \item Mentoría de ingenieros y liderazgo de decisiones de arquitectura en equipos multidisciplinarios de 4 a 6, alineando Producto e ingeniería antes de la entrega. Diseño de servicios event-driven Java 11/Spring Boot, Hibernate/JPA y RabbitMQ con alta disponibilidad, tolerancia a fallos y procesamiento asíncrono.
+    \item Diseño de componentes frontend en JavaScript, React, AngularJS y Java 11 para el producto de cálculo impositivo offline en POS. PoC Snowflake--Kafka para integración en tiempo real (+$\sim$50\% throughput). CI/CD con Jenkins entre múltiples equipos.
+\end{itemize}
+\jobskills{Java 11, JavaScript, React, AngularJS, Spring Boot, Hibernate, SQL, Kafka, RabbitMQ, Snowflake, Jenkins}
+
+\vspace{3pt}
+
+\textit{Experiencia previa (2010--2016):} Application Support Engineer en Hewlett-Packard · Java Software Developer en Globant · Desarrollador PHP en La Gaceta · Desarrollador en Everis para Movistar Argentina · Desarrollador en Hewlett-Packard · Desarrollador/QA en Everis
+
+\vspace{4pt}
+
+% =========================
+% EDUCACIÓN
+% =========================
+{\large \textbf{EDUCACIÓN}}\\[2pt]
+\hrule
+\vspace{2pt}
+
+\textbf{Universidad del Norte Santo Tomás de Aquino} \hfill Tucumán, Argentina\\
+Ingeniería en Informática --- Graduado
+
+\vspace{4pt}
+
+% =========================
+% IDIOMAS
+% =========================
+{\large \textbf{IDIOMAS}}\\[2pt]
+\hrule
+\vspace{2pt}
+
+\textbf{Inglés} (Avanzado) \quad \textbf{Español} (Nativo)
+
+\end{document}

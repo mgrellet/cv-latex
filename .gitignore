@@ -1,0 +1,22 @@
+# Ignore everything at repo root
+/*
+
+# Keep gitignore itself
+!.gitignore
+
+# Keep these files
+!promps.md
+!readme.md
+
+# Base CV folder: track only the .tex files, ignore everything else
+# (aux/log/out/pdf, .DS_Store, etc.) inside it
+!/Base CV/
+/Base CV/*
+
+!/Base CV/english/
+/Base CV/english/*
+!/Base CV/english/*.tex
+
+!/Base CV/spanish/
+/Base CV/spanish/*
+!/Base CV/spanish/*.tex

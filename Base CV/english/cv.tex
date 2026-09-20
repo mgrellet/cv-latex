@@ -1,0 +1,132 @@
+%% Compile with: pdflatex cv.tex
+%% ATS: lmodern (scalable) + microtype DisableLigatures so pdftotext reads fl/fi/ff literally.
+%% Base CV --- tailor headline, summary, bullets, and skills per job description.
+
+\documentclass[10pt]{article}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\DisableLigatures{encoding = *, family = * }
+\usepackage[english]{babel}
+\usepackage{hyperref}
+\usepackage[left=1.3cm,top=0.8cm,right=1.3cm,bottom=0.8cm]{geometry}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{needspace}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=12pt,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt}
+\newcommand{\jobsep}{\vspace{3pt}}
+\newcommand{\jobskills}[1]{\vspace{0.5pt}{\small \textit{Skills:} #1}\\}
+
+\begin{document}
+
+% =========================
+% HEADER (ATS friendly)
+% =========================
+\begin{center}
+    {\Large \textbf{Martín Alejandro Grellet}}\\[1pt]
+    {\normalsize Software Engineer}\\[1pt]
+    Tucumán, Argentina · martin.alejandro.grellet@gmail.com ·
+    \href{https://www.linkedin.com/in/mgrellet}{linkedin.com/in/mgrellet}
+\end{center}
+
+\vspace{4pt}
+
+% =========================
+% PROFESSIONAL SUMMARY
+% =========================
+{\large \textbf{PROFESSIONAL SUMMARY}}\\[2pt]
+\hrule
+\vspace{2pt}
+
+Software Engineer designing and shipping production systems in Java/Spring Boot, NestJS/TypeScript, and Go --- REST APIs, event-driven architectures (RabbitMQ), and React UIs in distributed, high-concurrency environments. Owns delivery quality through observability (Datadog, New Relic), automated testing, and CI/CD; mentors engineers and partners with Product. Background in tax compliance, logistics, payments, and high-volume transactional platforms.
+
+\vspace{4pt}
+
+% =========================
+% PROFESSIONAL EXPERIENCE
+% =========================
+{\large \textbf{PROFESSIONAL EXPERIENCE}}\\[2pt]
+\hrule
+\vspace{2pt}
+
+\textbf{Siltium} \hfill Remote, Argentina\\
+\textit{Software Engineer} \hfill Mar 2025 -- Present
+
+\begin{itemize}
+    \item Designed backend services, REST APIs, and data models for Correo Argentino's international shipment data in Java/Spring Boot and NestJS (TypeScript, JavaScript, Node.js), reducing manual processing by $\sim$70\%. Documented designs with OpenAPI/Swagger; deployed on OpenShift with application YAML manifests.
+\end{itemize}
+\jobskills{JavaScript, TypeScript, Node.js, NestJS, Java, Spring Boot, OpenAPI/Swagger, OpenShift}
+
+\jobsep
+
+\textbf{AYI Group} \hfill Remote, Argentina\\
+\textit{Software Engineer} \hfill Jul 2024 -- Feb 2025
+
+\begin{itemize}
+    \item Led a legacy-monolith migration to Java/Spring Boot backend services and React (JavaScript) microfrontends, deploying with Docker. Reduced average MySQL latency by $\sim$35\% under peak load by optimizing execution plans and indexes.
+\end{itemize}
+\jobskills{Java, JavaScript, React, Spring Boot, MySQL, Docker}
+
+\jobsep
+
+\textbf{Sovos} \hfill Tucumán, Argentina\\
+\textit{Software Engineer} \hfill Jul 2022 -- May 2024
+
+\begin{itemize}
+    \item Designed Java 17/Spring Boot backend services and Hibernate/JPA data models for POS tax calculation under high concurrency; React (JavaScript) UI; OpenAPI/Swagger contracts for Product. Cut dependent API latency from $\sim$1s to $\sim$100ms. CI/CD with Azure DevOps and Jenkins; tests with JUnit and Mockito.
+\end{itemize}
+\jobskills{Java 17, JavaScript, React, Spring Boot, Hibernate, SQL, JUnit, Mockito, Azure DevOps, Jenkins}
+
+\jobsep
+
+\textbf{Mercado Libre} \hfill Remote, Argentina\\
+\textit{Software Engineer} \hfill Sep 2021 -- Apr 2022
+
+\begin{itemize}
+    \item Built a Go REST API to ingest daily Visa CSV files under high volume; monitored production in Datadog and New Relic. Designed a seller classification API with tax data models in AWS DynamoDB.
+\end{itemize}
+\jobskills{Go, AWS, DynamoDB, Datadog, New Relic}
+
+\jobsep
+
+\textbf{Sovos} \hfill Tucumán, Argentina\\
+\textit{Software Engineer} \hfill Feb 2016 -- Sep 2021
+
+\begin{itemize}
+    \item Mentored engineers and led architectural decisions for cross-functional teams of 4--6, aligning Product and engineering before delivery. Designed event-driven Java 11/Spring Boot, Hibernate/JPA, and RabbitMQ services with high availability, fault tolerance, and asynchronous processing.
+    \item Designed frontend components in JavaScript, React, AngularJS, and Java 11 for the offline POS tax product, supporting rollout to enterprise retail clients. Led a Snowflake--Kafka PoC for real-time data integration (+$\sim$50\% throughput in testing). Established Jenkins CI/CD across multiple teams.
+\end{itemize}
+\jobskills{Java 11, JavaScript, React, AngularJS, Spring Boot, Hibernate, SQL, Kafka, RabbitMQ, Snowflake, Jenkins}
+
+\vspace{3pt}
+
+\textit{Earlier experience (2010--2016):} Application Support Engineer at Hewlett-Packard · Java Software Developer at Globant · PHP Developer at La Gaceta · Developer at Everis for Movistar Argentina · Developer at Hewlett-Packard · Developer/QA at Everis
+
+\vspace{4pt}
+
+% =========================
+% EDUCATION
+% =========================
+{\large \textbf{EDUCATION}}\\[2pt]
+\hrule
+\vspace{2pt}
+
+\textbf{Universidad del Norte Santo Tomás de Aquino} \hfill Tucumán, Argentina\\
+Bachelor's Degree in Computer Engineering --- Graduated
+
+\vspace{4pt}
+
+% =========================
+% LANGUAGES
+% =========================
+{\large \textbf{LANGUAGES}}\\[2pt]
+\hrule
+\vspace{2pt}
+
+\textbf{English} (Full professional proficiency) \quad \textbf{Spanish} (Native)
+
+\end{document}
