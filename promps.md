@@ -13,10 +13,11 @@ When this file is attached (`@promps.md`), tailor a company-specific CV from a *
 
 - Do **not** invent employers, dates, titles, metrics, or technologies that are not in the base CV. Reorder, rephrase, and emphasize only.
 - If a JD keyword is a real gap, leave it out of the resume and mention it in the chat.
-- Keep the LaTeX preamble and ATS setup from the base. Keep **1–2 pages**.
+- Keep the LaTeX preamble and ATS setup from the base. Keep **1 page**.
 - Headline, summary, and skills must match the JD using **real** experience only.
 - Put the most relevant jobs on page 1. Reorder bullets; do not fabricate impact.
 - Do not put years of experience on description
+- Generate the cv in pdf as MartinGrellet-[companyName].pdf
 
 ## Prompt 1 — Recruiter match
 

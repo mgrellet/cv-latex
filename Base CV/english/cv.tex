@@ -10,7 +10,7 @@
 \DisableLigatures{encoding = *, family = * }
 \usepackage[english]{babel}
 \usepackage{hyperref}
-\usepackage[left=1.3cm,top=0.8cm,right=1.3cm,bottom=0.8cm]{geometry}
+\usepackage[left=1.3cm,top=0.6cm,right=1.3cm,bottom=0.4cm]{geometry}
 \usepackage{parskip}
 \usepackage{enumitem}
 \usepackage{needspace}
@@ -33,7 +33,7 @@
     \href{https://www.linkedin.com/in/mgrellet}{linkedin.com/in/mgrellet}
 \end{center}
 
-\vspace{4pt}
+\vspace{6pt}
 
 % =========================
 % PROFESSIONAL SUMMARY
@@ -44,7 +44,7 @@
 
 Software Engineer designing and shipping production systems in Java/Spring Boot, NestJS/TypeScript, and Go --- REST APIs, event-driven architectures (RabbitMQ), and React UIs in distributed, high-concurrency environments. Owns delivery quality through observability (Datadog, New Relic), automated testing, and CI/CD; mentors engineers and partners with Product. Background in tax compliance, logistics, payments, and high-volume transactional platforms.
 
-\vspace{4pt}
+\vspace{6pt}
 
 % =========================
 % PROFESSIONAL EXPERIENCE
@@ -57,9 +57,10 @@ Software Engineer designing and shipping production systems in Java/Spring Boot,
 \textit{Software Engineer} \hfill Mar 2025 -- Present
 
 \begin{itemize}
-    \item Designed backend services, REST APIs, and data models for Correo Argentino's international shipment data in Java/Spring Boot and NestJS (TypeScript, JavaScript, Node.js), reducing manual processing by $\sim$70\%. Documented designs with OpenAPI/Swagger; deployed on OpenShift with application YAML manifests.
+    \item Eliminated manual data entry for Correo Argentino's international shipments by automating the load, removing recurring errors. Built the Java/Spring Boot and NestJS (Node.js, TypeScript) services and REST APIs behind it.
+    \item Applied clean architecture so other teams could extend it safely; documented APIs with OpenAPI/Swagger; deployed on OpenShift.
 \end{itemize}
-\jobskills{JavaScript, TypeScript, Node.js, NestJS, Java, Spring Boot, Docker, OpenAPI/Swagger, OpenShift}
+\jobskills{JavaScript, TypeScript, Node.js, Java, NestJS, Spring Boot, REST APIs, Docker, OpenAPI/Swagger, OpenShift}
 
 \jobsep
 
@@ -67,29 +68,31 @@ Software Engineer designing and shipping production systems in Java/Spring Boot,
 \textit{Software Engineer} \hfill Jul 2024 -- Feb 2025
 
 \begin{itemize}
-    \item Led a legacy-monolith migration to Java/Spring Boot backend services and React (JavaScript) microfrontends, deploying with Docker. Reduced average MySQL latency by $\sim$35\% under peak load by optimizing execution plans and indexes.
+    \item Led the migration of a legacy monolith to Java/Spring Boot services and React microfrontends deployed with Docker for independent releases.
+    \item Reduced average MySQL latency by $\sim$35\% under peak load by finding slow queries and optimizing execution plans and indexes.
 \end{itemize}
-\jobskills{Java, JavaScript, React, Spring Boot, MySQL, Docker}
+\jobskills{Java, JavaScript, React, Spring Boot, SQL, MySQL, Docker, Microservices}
 
 \jobsep
 
 \textbf{Sovos} \hfill Tucumán, Argentina\\
-\textit{Software Engineer} \hfill Jul 2022 -- May 2024
+\textit{Software Engineer} \hfill Jun 2022 -- Jul 2024
 
 \begin{itemize}
-    \item Designed Java 17/Spring Boot backend services and Hibernate/JPA data models for POS tax calculation under high concurrency; React (JavaScript) UI; OpenAPI/Swagger contracts for Product. Cut dependent API latency from $\sim$1s to $\sim$100ms. CI/CD with Azure DevOps and Jenkins; tests with JUnit and Mockito.
+    \item Built Java 17/Spring Boot services and Hibernate/JPA data models that calculate taxes for POS systems under high concurrency, plus the React UI, with OpenAPI/Swagger contracts for Product.
+    \item Rebuilt the pipelines between services, cutting dependent API latency from $\sim$1s to $\sim$100ms at peak load; ran CI/CD on Azure DevOps and Jenkins with JUnit and Mockito tests.
 \end{itemize}
-\jobskills{Java 17, JavaScript, React, Spring Boot, Hibernate, SQL, JUnit, Mockito, Docker, Azure DevOps, Jenkins}
+\jobskills{Java, JavaScript, React, Spring Boot, Hibernate, SQL, JUnit, Mockito, Docker, OpenAPI/Swagger, Azure DevOps, Jenkins}
 
 \jobsep
 
 \textbf{Mercado Libre} \hfill Remote, Argentina\\
-\textit{Software Engineer} \hfill Sep 2021 -- Apr 2022
+\textit{Software Engineer} \hfill Sep 2021 -- May 2022
 
 \begin{itemize}
-    \item Built a Go REST API to ingest daily Visa CSV files under high volume; monitored production in Datadog and New Relic. Designed a seller classification API with tax data models in AWS DynamoDB.
+    \item Built Go REST APIs on AWS (Docker) that ingest daily high-volume Visa CSV files, calculate financial impact, and classify sellers with tax data in DynamoDB; monitored production in Datadog and New Relic.
 \end{itemize}
-\jobskills{Go, AWS, DynamoDB, Datadog, New Relic}
+\jobskills{Go, REST APIs, AWS, DynamoDB, Docker, Datadog, New Relic}
 
 \jobsep
 
@@ -97,16 +100,17 @@ Software Engineer designing and shipping production systems in Java/Spring Boot,
 \textit{Software Engineer} \hfill Feb 2016 -- Sep 2021
 
 \begin{itemize}
-    \item Mentored engineers and led architectural decisions for cross-functional teams of 4--6, aligning Product and engineering before delivery. Designed event-driven Java 11/Spring Boot, Hibernate/JPA, and RabbitMQ services with high availability, fault tolerance, and asynchronous processing.
-    \item Designed frontend components in JavaScript, React, AngularJS, and Java 11 for the offline POS tax product, supporting rollout to enterprise retail clients. Led a Snowflake--Kafka PoC for real-time data integration (+$\sim$50\% throughput in testing). Established Jenkins CI/CD across multiple teams.
+    \item Led cross-functional teams of 4--6 engineers: mentored, drove technical decisions, and aligned Product and engineering.
+    \item Designed event-driven tax-calculation services (Java 11/Spring Boot, Hibernate/JPA, RabbitMQ) for high availability.
+    \item Built JavaScript/React/AngularJS frontends for the offline POS tax product used by enterprise retail clients; set up Jenkins CI/CD across teams; led a Snowflake--Kafka proof of concept for real-time data integration.
 \end{itemize}
-\jobskills{Java 11, JavaScript, React, AngularJS, Spring Boot, Hibernate, SQL, Docker, Kafka, RabbitMQ, Snowflake, Jenkins}
+\jobskills{Java, JavaScript, React, AngularJS, Spring Boot, Hibernate, SQL, Docker, Kafka, RabbitMQ, Snowflake, Jenkins}
 
 \vspace{3pt}
 
-\textit{Earlier experience (2010--2016):} Application Support Engineer at Hewlett-Packard · Java Software Developer at Globant · PHP Developer at La Gaceta · Developer at Everis for Movistar Argentina · Developer at Hewlett-Packard · Developer/QA at Everis
+\textit{Earlier experience (2010--2016):} Software Engineer at Hewlett-Packard (American Airlines) · Globant · La Gaceta · Everis. \textit{Skills:} Java, PHP, Spring, Hibernate, SQL, SOAP
 
-\vspace{4pt}
+\vspace{6pt}
 
 % =========================
 % EDUCATION
@@ -118,7 +122,7 @@ Software Engineer designing and shipping production systems in Java/Spring Boot,
 \textbf{Universidad del Norte Santo Tomás de Aquino} \hfill Tucumán, Argentina\\
 Computer Engineering --- Graduated
 
-\vspace{4pt}
+\vspace{6pt}
 
 % =========================
 % LANGUAGES
@@ -128,5 +132,9 @@ Computer Engineering --- Graduated
 \vspace{2pt}
 
 \textbf{English} (B2) \quad \textbf{Spanish} (Native)
+
+\vspace{3pt}
+
+\textbf{Certification:} Oracle Certified Associate, Java SE 7 Programmer
 
 \end{document}
